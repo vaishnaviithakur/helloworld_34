@@ -1,2 +1,3 @@
 # helloworld_34
-An e-commerce handicraft website for globalization of handloom products of India
+Craftinet is a fully responsive ecommerce handicraft website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
+
