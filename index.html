@@ -7,6 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="https://fontawesome.com/icons/facebook-square?style=brands" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
@@ -18,10 +26,10 @@
               </div>
               <nav>
                   <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="product.html">Products</a></li>
-                      <li><a href="">About</a></li>
-                      <li><a href="">Contacts</a></li>
+                      <li><a href="login.html">Home</a></li>
+                      <li><a href="options.html">Products</a></li>
+                      <span><button id="popit" type="button" class="button2 btn">ABOUT</button></span>
+                      <span><button id="contactme" type="button" class="button2 btn">CONTACTS</button></span>
                       <li><a href="">Accounts</a></li>
                   </ul>
               </nav>
@@ -41,6 +49,22 @@
           </div> 
         </div>
     </div>
+
+    <!----Sliders---->
+    <div class="sliderss">
+        <div class="auto-sliding" width="790" height="400">
+          
+         <ul class="autoslide">
+            <li><img src="images/sl1.jpg" alt="pic1" width="755" height="300"></li>
+            <li><img src="images/sl2.jpg" alt="pic2" width="755" height="300"></li>
+            <li><img src="images/sl3.jpg" alt="pic3" width="755" height="300"></li>
+            <li><img src="images/sl4.jpg" alt="pic4" width="755" height="300"></li>
+            <li><img src="images/sl1.jpg" alt="pic4" width="755" height="300"></li>
+         </ul>
+      </div>
+     
+      </div>
+      <br><br><br><br>
     <!-------FEATURED CATEGORIES------>
        <div class="categories">
          <div class="small-container">
@@ -57,7 +81,83 @@
             </div>
         </div>
        </div>
+    <!---ABOUT---->
     
+
+    <div class="popupp centerr">
+        <div class="icon">
+           <br>
+            <i class="fa fa-address-card-o fa-sm"></i>
+        </div>
+        <div class="title">
+             <h5>ABOUT US</h5>
+        </div>
+        <div class="description">
+               <h1>CRAFTINET TEAM</h1>
+                 <div class="inputt-box">
+                    <div class="about">
+                        <p>
+                          <br> 
+                          <h6> Hello! We hope you liked our website and our vision. </h6><br>
+                          <strong> We are a team of three that includes Anshuman, Vaishnavi and Sidhant. We are basically
+                              web developers who wish to provide easy access of Handloom products to people so that they can access, buy and use these from any corner of the world.
+                             We have a collection of different genre materials. Make sure to check them out and feel free to mail us for queries.
+                            </strong>. 
+                        </p>
+                    </div>
+                 </div>
+        </div>
+        <div class="dismiss-btn">
+               <button id="dismiss-popupp-btn">B A C K</button>
+        </div>
+      </div><br>
+      
+        <!-- CONTACTS -->
+
+        <div class="poppin centerr">
+            <div class="title">
+                 <h5>CONTACT US</h5>
+            </div>
+            <div class="description">
+                   <h1>BOOK BHOOKH TEAM</h1>
+                    <div class="inputttt-box about">
+                        <div id="contacts" class="contacts-img" align="left">
+                            <div class="text input input-box ed-box">
+                              <p>Let us know about your query and questions <br> about anything! Your reviews and suggestions matter.
+                              </p>
+                                     Email: anshugudduamsr@gmail.com <br>
+                                     Instagram:
+                                     <a href="https://www.instagram.com/beingdaanav/?hl=en">@beingdaanav</a>
+                               <form action="contact.php" method="get" enctype="text/plain">
+                                    <hr>
+                               
+                               <div> <label>Your Name</label>
+                                    <input type="text" name="yourname" value=""><br >
+                               </div>
+                               <div class="label">
+                                    <label>Do you want to sign up for the email list?
+                                    <input type="checkbox" name="yourCheckbox"><br ></label>
+                               </div>
+                               <div>
+                                    <label>Your email:</label>
+                                    <input type="email" name="yourmail" value=""><br >
+                                    <label>Your Message</label><br >
+                                    <textarea name="yourmsg" rows="3" cols="40"></textarea><br><br>
+                                    <button type="submit" name="submit" value="submit" class="submit-btn clicks"> SUBMIT </button>
+                               </div>
+                               </form>
+                             </div> 
+                          </div>
+                    
+                   </div> 
+               </div> 
+        
+               <div class="dismiss-btn">
+                 <button id="dismiss-poppin-btn">B A C K</button>
+               </div>
+          </div><br>
+  
+  
     <!-------FEATURED PRODUCTS------>
        <div class="small-container">
            <h2 class="title">Featured Products</h2>
@@ -87,18 +187,7 @@
                 </div>
                 <p>Rs.700/-</p>
             </div>
-            <div class="col-4">
-                <img src="images/1.jpg" alt="img4">
-                <h4>cgjdchchg</h4>
-                <div class="rating">
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star-half"></i>
-                </div>
-                <p>Rs.700/-</p>
-            </div>
+     
             <div class="col-4">
                 <img src="images/Teracotta.jpg" alt="img4">
                 <h4>cgjdchchg</h4>
@@ -113,13 +202,14 @@
             </div>
             
            </div>
+          
            <button><a href="sarees.html">Click Here</a></button>
 <!------offer-->
        <div class="offer">
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <img src="" class="offer-img" alt="">
+                    <img src="images/1.jpg" class="offer-img" alt="">
                     </div>
                     <div class="col-2">
                         <p>Exclusively Availaible on red Store</p>
@@ -152,7 +242,7 @@
                 <i class="fa fa-star-o"></i>
                 
             </div>
-            <img src="" alt="">
+            <img src="images/1.jpg" alt="">
             <h3>sean </h3>
         </div>
         <div class="col-3">
@@ -169,7 +259,7 @@
                 <i class="fa fa-star-o"></i>
                 
             </div>
-            <img src="" alt="">
+            <img src="images/1.jpg" alt="">
             <h3>sean </h3>
         </div>
         <div class="col-3">
@@ -186,13 +276,39 @@
                 <i class="fa fa-star-o"></i>
                 
             </div>
-            <img src="" alt="">
+            <img src="images/1.jpg" alt="">
             <h3>sean </h3>
         </div>
     </div>
 </div>
 </div>
+<!-- FOOTER -->
 
+<div class="thanks" align="center"> 
+    <h3> Thanks for visiting </h3>
+    <p class="copyright">© 2022 CRAFTINET.</p></td>
+    <footer  class="social-icon" >
+     <a class="fa fa-facebook-square"></a>
+     <a class="fa fa-instagram"></a>
+     <a class="fa fa-twitter-square"></a>
+     <a class="fa fa-envelope"></a>
+     <p>© Copyright 2022 CRAFTINET <br>Team Hello World</p>
+   </footer>
+ </div> 
+<script type="text/javascript">
+    document.getElementById("popit").addEventListener("click",function(){
+    document.getElementsByClassName("popupp")[0].classList.add("active");
+    });
+    document.getElementById("dismiss-popupp-btn").addEventListener("click",function(){
+    document.getElementsByClassName("popupp")[0].classList.remove("active");
+    });
+    document.getElementById("contactme").addEventListener("click",function(){
+      document.getElementsByClassName("poppin")[0].classList.add("active");
+      }); 
+      document.getElementById("dismiss-poppin-btn").addEventListener("click",function(){
+      document.getElementsByClassName("poppin")[0].classList.remove("active");
+      }); 
+</script>
     </body>
     
 </html>
